@@ -34,16 +34,17 @@ function initializeGrid(numSquares) {
 
 function darkenSquare(square) {
     square.style.backgroundColor = "black";
-    console.log("TEST");
+
 }
 
 function resetGrid(){
-    let newSize = prompt("please enter a new n x n grid value"); 
+    let newSize = Number(prompt("please enter a new n x n grid value")); 
     if (newSize > 100) {
         alert ("Please enter a smaller value, this could cause instability");
         return;
     }
-    if (!Number.isInteger(newSize) || newSize <= 0) {
+    if (!Number.isInteger(newSize) ||newSize <= 0) {
+        console.log(typeof(newSize));
         alert("please enter a valid value for the new grid size");
         return;
     }
