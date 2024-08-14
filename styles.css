@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    gap:12px;
+}
+
+h1 {
+    font-family: sans-serif;
+    
+}
+
+#container {
+    display:flex;
+    background-color: red;
+    width:660px;
+    height: 660px;
+    border-color: red;
+    border: 10px solid red;
+    
+
+    flex-direction: column;
+    justify-content: space-evenly;
+   
+}
+
+
+#resetButton {
+    font-family: sans-serif;
+
+}
+
+
+.row {
+    display: flex;
+    flex: 1;
+
+    
+    justify-content: space-evenly;
+    
+}
+
+.square {
+    display:flex;
+    flex:1;
+    background-color: white;
+    
+}
